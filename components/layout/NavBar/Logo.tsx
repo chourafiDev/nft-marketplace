@@ -5,9 +5,7 @@ import { logo } from "../../../assets";
 const Logo = () => {
   return (
     <Link href="/">
-      <a>
-        <Image src={logo} alt="logo" width={100} />
-      </a>
+      <Image src={logo} alt="logo" width={100} className="cursor-pointer" />
     </Link>
   );
 };
