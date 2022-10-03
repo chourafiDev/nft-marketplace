@@ -7,7 +7,7 @@ import { logo, portfolio01, portfolio02, portfolio03 } from "../../../assets";
 
 const Footer = () => {
   return (
-    <div className="bg-light/5">
+    <div className="bg-light/5 pt-16">
       <div className="grid grid-cols-4 py-5 px-28">
         <div className="pr-8">
           <div className="mb-4">

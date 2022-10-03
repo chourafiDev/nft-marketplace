@@ -10,7 +10,7 @@ const Layout = ({ children }: IProps) => {
   return (
     <>
       <NavBar />
-      <main className="my-20 mx-28">{children}</main>
+      <main>{children}</main>
       <Footer />
     </>
   );

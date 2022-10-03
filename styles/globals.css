@@ -25,7 +25,7 @@ body::before {
 
 @layer base {
   .btn {
-    @apply rounded-md border border-0 px-12 py-3 text-white duration-300 ease-in font-normal;
+    @apply rounded-md border-0 px-12 py-3 text-white duration-300 ease-in font-normal;
   }
 
   .btn-primary {
@@ -35,4 +35,71 @@ body::before {
   .btn-dark {
     @apply bg-dark hover:bg-primary;
   }
+
+  .card {
+    @apply bg-dark/20 backdrop-blur-md border border-white/10 rounded-lg p-4;
+  }
+}
+
+.banner-bg {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.slider-1 {
+  background-image: url("../assets/bg-image-1.jpg");
+}
+.slider-2 {
+  background-image: url("../assets/bg-image-2.jpg");
+}
+.slider-3 {
+  background-image: url("../assets/bg-image-3.jpg");
+}
+
+.banner-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #13131d6e;
+  z-index: -1;
+}
+
+.active-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: 0.5s ease;
+}
+
+.inactive-dropdown {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: 0.5s ease;
+}
+
+/* React slick style */
+.slick-dots {
+  bottom: 60px !important;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: transparent !important;
+  border: 2px solid #00a3ff !important;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+}
+
+.slick-dots li button:before {
+  opacity: 1 !important;
+  color: #212e48 !important;
+  font-size: 12px !important;
 }
