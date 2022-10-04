@@ -10,7 +10,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 //Components
-import { Banner } from "../components";
+import { Banner, TopSellers } from "../components";
 
 const Home: NextPage = () => {
   return (
@@ -22,7 +22,9 @@ const Home: NextPage = () => {
       </Head>
       <Layout>
         <Banner />
-        <div className="my-20 mx-28"></div>
+        <div className="my-20 mx-28">
+          <TopSellers />
+        </div>
       </Layout>
     </>
   );

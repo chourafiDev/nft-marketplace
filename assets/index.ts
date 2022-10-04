@@ -9,8 +9,14 @@ import portfolio03 from "./portfolio-03.jpg";
 import bgImage1 from "./bg-image-1.jpg";
 import bgImage2 from "./bg-image-2.jpg";
 import bgImage3 from "./bg-image-3.jpg";
+import client1 from "./client-1.png";
 import client2 from "./client-2.png";
+import client4 from "./client-4.png";
+import client5 from "./client-5.png";
+import client6 from "./client-6.png";
+import client8 from "./client-8.png";
 import client9 from "./client-9.png";
+import client10 from "./client-10.png";
 import client11 from "./client-11.png";
 import client20 from "./client-20.png";
 
@@ -26,8 +32,14 @@ export {
   bgImage1,
   bgImage2,
   bgImage3,
+  client1,
   client2,
+  client4,
+  client5,
+  client6,
+  client8,
   client9,
+  client10,
   client11,
   client20,
 };

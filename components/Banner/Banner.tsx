@@ -1,8 +1,15 @@
-import { useState } from "react";
 import Image from "next/image";
 import { BsSuitHeart, BsThreeDots, BsDot } from "react-icons/bs";
 import { client2, client9, client11, client20 } from "../../assets";
+import { Timer } from "../index";
 import Slider from "react-slick";
+
+const defaultRemainingTime = {
+  seconds: "00",
+  minutes: "00",
+  hours: "00",
+  days: "00",
+};
 
 const Banner = () => {
   const settings = {
@@ -14,6 +21,7 @@ const Banner = () => {
     slidesToScroll: 1,
   };
 
+  console.log("render");
   return (
     <Slider {...settings}>
       <div className="banner-bg slider-1">
@@ -89,51 +97,7 @@ const Banner = () => {
                     <p className="text-white font-medium text-lg">
                       Auction has ended
                     </p>
-                    <div className="flex items-center mt-5">
-                      <div>
-                        <p>
-                          <span className="text-white font-semibold bg-dark/70 text-lg px-3 py-1 rounded-md">
-                            1163
-                          </span>
-                          <span className="text-light mx-1">:</span>
-                        </p>
-                        <p className="text-light mt-1 text-center text-[14px]">
-                          DAY
-                        </p>
-                      </div>
-                      <div>
-                        <p>
-                          <span className="text-white font-semibold bg-dark/70 text-lg px-3 py-1 rounded-md">
-                            00
-                          </span>
-                          <span className="text-light mx-1">:</span>
-                        </p>
-                        <p className="text-light mt-1 text-center text-[14px]">
-                          HR'S
-                        </p>
-                      </div>
-                      <div>
-                        <p>
-                          <span className="text-white font-semibold bg-dark/70 text-lg px-3 py-1 rounded-md">
-                            47
-                          </span>
-                          <span className="text-light mx-1">:</span>
-                        </p>
-                        <p className="text-light mt-1 text-center text-[14px]">
-                          MIN'S
-                        </p>
-                      </div>
-                      <div>
-                        <p>
-                          <span className="text-white font-semibold bg-dark/70 text-lg px-3 py-1 rounded-md">
-                            34
-                          </span>
-                        </p>
-                        <p className="text-light mt-1 text-center text-[14px]">
-                          SEC
-                        </p>
-                      </div>
-                    </div>
+                    <Timer countDownTimestampMS={1672354800000} />
                   </div>
                 </div>
 
@@ -193,6 +157,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
+
       <div className="banner-bg slider-2">
         <div className="pt-20 pb-8 mx-28 flex flex-col gap-40">
           <div className="flex lg:flex-row flex-col gap-10 justify-between items-center">
@@ -266,51 +231,7 @@ const Banner = () => {
                     <p className="text-white font-medium text-lg">
                       Auction has ended
                     </p>
-                    <div className="flex items-center mt-5">
-                      <div>
-                        <p>
-                          <span className="text-white font-semibold bg-dark/70 text-lg px-3 py-1 rounded-md">
-                            1163
-                          </span>
-                          <span className="text-light mx-1">:</span>
-                        </p>
-                        <p className="text-light mt-1 text-center text-[14px]">
-                          DAY
-                        </p>
-                      </div>
-                      <div>
-                        <p>
-                          <span className="text-white font-semibold bg-dark/70 text-lg px-3 py-1 rounded-md">
-                            00
-                          </span>
-                          <span className="text-light mx-1">:</span>
-                        </p>
-                        <p className="text-light mt-1 text-center text-[14px]">
-                          HR'S
-                        </p>
-                      </div>
-                      <div>
-                        <p>
-                          <span className="text-white font-semibold bg-dark/70 text-lg px-3 py-1 rounded-md">
-                            47
-                          </span>
-                          <span className="text-light mx-1">:</span>
-                        </p>
-                        <p className="text-light mt-1 text-center text-[14px]">
-                          MIN'S
-                        </p>
-                      </div>
-                      <div>
-                        <p>
-                          <span className="text-white font-semibold bg-dark/70 text-lg px-3 py-1 rounded-md">
-                            34
-                          </span>
-                        </p>
-                        <p className="text-light mt-1 text-center text-[14px]">
-                          SEC
-                        </p>
-                      </div>
-                    </div>
+                    <Timer countDownTimestampMS={1672354800000} />
                   </div>
                 </div>
 
@@ -370,6 +291,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
+
       <div className="banner-bg slider-3">
         <div className="pt-20 pb-8 mx-28 flex flex-col gap-40">
           <div className="flex lg:flex-row flex-col gap-10 justify-between items-center">
@@ -443,51 +365,7 @@ const Banner = () => {
                     <p className="text-white font-medium text-lg">
                       Auction has ended
                     </p>
-                    <div className="flex items-center mt-5">
-                      <div>
-                        <p>
-                          <span className="text-white font-semibold bg-dark/70 text-lg px-3 py-1 rounded-md">
-                            1163
-                          </span>
-                          <span className="text-light mx-1">:</span>
-                        </p>
-                        <p className="text-light mt-1 text-center text-[14px]">
-                          DAY
-                        </p>
-                      </div>
-                      <div>
-                        <p>
-                          <span className="text-white font-semibold bg-dark/70 text-lg px-3 py-1 rounded-md">
-                            00
-                          </span>
-                          <span className="text-light mx-1">:</span>
-                        </p>
-                        <p className="text-light mt-1 text-center text-[14px]">
-                          HR'S
-                        </p>
-                      </div>
-                      <div>
-                        <p>
-                          <span className="text-white font-semibold bg-dark/70 text-lg px-3 py-1 rounded-md">
-                            47
-                          </span>
-                          <span className="text-light mx-1">:</span>
-                        </p>
-                        <p className="text-light mt-1 text-center text-[14px]">
-                          MIN'S
-                        </p>
-                      </div>
-                      <div>
-                        <p>
-                          <span className="text-white font-semibold bg-dark/70 text-lg px-3 py-1 rounded-md">
-                            34
-                          </span>
-                        </p>
-                        <p className="text-light mt-1 text-center text-[14px]">
-                          SEC
-                        </p>
-                      </div>
-                    </div>
+                    <Timer countDownTimestampMS={1672354800000} />
                   </div>
                 </div>
 

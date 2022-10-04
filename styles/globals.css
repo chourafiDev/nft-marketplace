@@ -29,7 +29,7 @@ body::before {
   }
 
   .btn-primary {
-    @apply bg-primary hover:bg-dark;
+    @apply bg-primary hover:bg-dark shadow-xl shadow-primary/10;
   }
 
   .btn-dark {
@@ -41,6 +41,7 @@ body::before {
   }
 }
 
+/* Banner section */
 .banner-bg {
   position: relative;
   background-position: center;
@@ -70,6 +71,12 @@ body::before {
   z-index: -1;
 }
 
+/* Top sellers section */
+.top-seller:hover .top-seller-image {
+  transform: scale(1.2);
+}
+
+/* Dropdown style */
 .active-dropdown {
   opacity: 1;
   visibility: visible;
@@ -82,6 +89,10 @@ body::before {
   visibility: hidden;
   transform: translateY(-10px);
   transition: 0.5s ease;
+}
+
+.time-w {
+  width: 2ch;
 }
 
 /* React slick style */
@@ -102,4 +113,11 @@ body::before {
   opacity: 1 !important;
   color: #212e48 !important;
   font-size: 12px !important;
+}
+
+.slider-area .slick-slide {
+  margin: 0 10px;
+}
+.slider-area .slick-list {
+  margin: 0 -10px;
 }
