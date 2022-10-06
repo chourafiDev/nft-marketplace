@@ -15,8 +15,8 @@ const Footer = () => {
           </div>
 
           <p className="text-light text-lg font-medium mb-10">
-            Created with the collaboration of over 60 of the world's best Nuron
-            Artists.
+            Created with the collaboration of over 60 of the world&apos;s best
+            Nuron Artists.
           </p>
           <hr className="border-t border-white/10" />
           <div className="mt-10">
@@ -32,7 +32,7 @@ const Footer = () => {
               />
               <button className="btn btn-primary py-2">Subscribe</button>
               <p className="text-light text-sm">
-                Email is safe. We don't spam.
+                Email is safe. We don&apos;t spam.
               </p>
             </div>
           </div>

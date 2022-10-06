@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import {
   client1,
   client4,
@@ -9,7 +11,7 @@ import {
   client11,
   client2,
   client20,
-} from "../../assets";
+} from "../../../../assets";
 
 const TopSellers = () => {
   const settings = {

@@ -19,6 +19,9 @@ import client9 from "./client-9.png";
 import client10 from "./client-10.png";
 import client11 from "./client-11.png";
 import client20 from "./client-20.png";
+import nft1 from "./nfts/nft-01.jpg";
+import nft2 from "./nfts/nft-02.jpg";
+import nft3 from "./nfts/nft-03.jpg";
 
 export {
   logo,

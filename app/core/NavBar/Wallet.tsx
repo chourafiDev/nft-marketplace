@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { BiSearch } from "react-icons/bi";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { MdOutlineLightMode } from "react-icons/md";

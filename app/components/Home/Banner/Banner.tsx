@@ -1,15 +1,10 @@
 import Image from "next/image";
-import { BsSuitHeart, BsThreeDots, BsDot } from "react-icons/bs";
-import { client2, client9, client11, client20 } from "../../assets";
-import { Timer } from "../index";
+import { BsSuitHeart, BsThreeDots } from "react-icons/bs";
+import { client2, client9, client11, client20 } from "../../../../assets";
+import { Timer } from "../../index";
 import Slider from "react-slick";
-
-const defaultRemainingTime = {
-  seconds: "00",
-  minutes: "00",
-  hours: "00",
-  days: "00",
-};
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Banner = () => {
   const settings = {
@@ -21,7 +16,6 @@ const Banner = () => {
     slidesToScroll: 1,
   };
 
-  console.log("render");
   return (
     <Slider {...settings}>
       <div className="banner-bg slider-1">

@@ -1,4 +1,4 @@
-import { Logo, NavLinks, Wallet } from "./";
+import { Logo, NavLinks, Wallet } from ".";
 
 const Index = () => {
   return (
