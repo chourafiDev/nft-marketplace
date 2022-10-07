@@ -197,7 +197,7 @@ const TopSellers = () => {
         </div>
       </Slider>
 
-      <div className="text-center">
+      <div className="text-center mt-20">
         <h2 className="text-white font-semibold text-5xl">
           Explore, collect, and sell NFTs
         </h2>

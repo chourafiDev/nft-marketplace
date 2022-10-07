@@ -5,6 +5,7 @@ import { Timer } from "../../index";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ProfileTooltip from "../../ProfileTooltip/ProfileTooltip";
 
 const Banner = () => {
   const settings = {
@@ -29,38 +30,11 @@ const Banner = () => {
               <h1 className="text-white font-bold text-[4.3rem]">
                 Collect Your Digital Product
               </h1>
-              <div className="flex gap-3 items-center mt-4">
-                <div className="flex items-center -space-x-2">
-                  <div className="hover:transform hover:scale-125 duration-200 ease-in cursor-pointer hover:z-30 border-2 w-[45px] h-[45px] border-white/20 rounded-full">
-                    <Image
-                      src={client2}
-                      alt="client2"
-                      className="rounded-full"
-                      width={45}
-                      height={45}
-                    />
-                  </div>
-                  <div className="hover:transform hover:scale-125 duration-200 ease-in cursor-pointer hover:z-30 border-2 w-[45px] h-[45px] border-white/20 rounded-full">
-                    <Image
-                      src={client9}
-                      alt="client9"
-                      className="rounded-full"
-                      width={45}
-                      height={45}
-                    />
-                  </div>
-                  <div className="hover:transform hover:scale-125 duration-200 ease-in cursor-pointer hover:z-30 border-2 w-[45px] h-[45px] border-white/20 rounded-full">
-                    <Image
-                      src={client11}
-                      alt="client11"
-                      className="rounded-full"
-                      width={45}
-                      height={45}
-                    />
-                  </div>
-                </div>
-                <p className="text-light font-medium">15+ Place Bit</p>
-              </div>
+
+              <ProfileTooltip
+                images={[client2, client9, client11]}
+                places="15+"
+              />
             </div>
 
             <div className="flex-1">

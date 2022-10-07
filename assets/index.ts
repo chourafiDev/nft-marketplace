@@ -22,6 +22,10 @@ import client20 from "./client-20.png";
 import nft1 from "./nfts/nft-01.jpg";
 import nft2 from "./nfts/nft-02.jpg";
 import nft3 from "./nfts/nft-03.jpg";
+import nft4 from "./nfts/nft-04.jpg";
+import nft5 from "./nfts/nft-05.jpg";
+import nft6 from "./nfts/nft-06.jpg";
+import nft7 from "./nfts/nft-07.jpg";
 
 export {
   logo,
@@ -45,4 +49,11 @@ export {
   client10,
   client11,
   client20,
+  nft1,
+  nft2,
+  nft3,
+  nft4,
+  nft5,
+  nft6,
+  nft7,
 };
