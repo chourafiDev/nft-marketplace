@@ -13,7 +13,7 @@ const Search = () => {
       <input
         type="text"
         placeholder="Search Here"
-        className="bg-transparent outline-none text-light caret-primary w-48"
+        className="bg-transparent outline-none text-light caret-primary w-full"
         onFocus={() => setIsFocus(true)}
         onBlur={() => setIsFocus(false)}
       />

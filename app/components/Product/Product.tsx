@@ -16,8 +16,8 @@ const Product = ({ product }: IProps) => {
         src={product.cover}
         alt={product.title}
         className="rounded-lg product-image duration-700 ease-liner object-cover"
-        width={300}
-        height={300}
+        width={500}
+        height={500}
       />
       <div className="px-5 pb-5">
         <div className="flex items-center justify-between my-4 text-sm">

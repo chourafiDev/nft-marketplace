@@ -72,7 +72,7 @@ const LiveBidding = () => {
         </div>
         <Slider ref={sliderRef} {...settings}>
           {products.map((product) => (
-            <div key={product.id} className="p-[14px]">
+            <div key={product.id} className="md:p-[14px] px-0">
               <Product product={product} />
             </div>
           ))}

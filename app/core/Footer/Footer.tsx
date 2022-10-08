@@ -8,7 +8,7 @@ import { logo, portfolio01, portfolio02, portfolio03 } from "../../../assets";
 const Footer = () => {
   return (
     <div className="bg-light/5 pt-16">
-      <div className="grid grid-cols-4 py-5 px-28">
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 py-5 lg:px-28 md:px-10 px-5 gap-8">
         <div className="pr-8">
           <div className="mb-4">
             <Image src={logo} alt="logo" width={100} />
@@ -38,7 +38,7 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <h2 className="text-white font-bold text-2xl tracking-wider mb-8">
+          <h2 className="text-white font-bold md:text-2xl text-xl tracking-wider mb-8">
             Blotn
           </h2>
           <ul className="text-light space-y-2 font-normal text-lg tracking-wide">
@@ -80,7 +80,7 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h2 className="text-white font-bold text-2xl tracking-wider mb-8">
+          <h2 className="text-white font-bold md:text-2xl text-xl tracking-wider mb-8">
             Information
           </h2>
           <ul className="text-light space-y-2 font-normal text-lg tracking-wide">
@@ -122,7 +122,7 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h2 className="text-white font-bold text-2xl tracking-wider mb-8">
+          <h2 className="text-white font-bold md:text-2xl text-xl tracking-wider mb-8">
             Recent Sold Out
           </h2>
           <ul className="space-y-4 tracking-wide">
@@ -183,10 +183,10 @@ const Footer = () => {
       </div>
 
       <div className="border-t border-white/10 mt-10">
-        <div className="flex justify-between items-center px-28 py-6">
-          <div className="flex items-center gap-4 text-light">
+        <div className="flex lg:flex-row flex-col space-y-4 lg:justify-between justify-center items-center md:px-28 px-5 py-6 w-full">
+          <div className="flex md:flex-row flex-col items-center md:gap-4 gap-2 text-light">
             <p>©2022 Blotn, Inc. All rights reserved.</p>
-            <div className="bg-white/10 h-6 w-[1px]"></div>
+            <div className="bg-white/10 h-6 w-[1px] md:block hidden"></div>
             <p className="flex items-center gap-2">
               <a href="#">Terms</a>
               <BsDot />
