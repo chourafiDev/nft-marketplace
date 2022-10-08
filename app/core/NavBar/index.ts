@@ -1,5 +1,5 @@
 import Logo from "./Logo";
 import NavLinks from "./NavLinks";
-import Wallet from "./Wallet";
+import NavButtons from "./NavButtons";
 
-export { Logo, NavLinks, Wallet };
+export { Logo, NavLinks, NavButtons };

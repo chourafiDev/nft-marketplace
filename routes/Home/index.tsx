@@ -15,7 +15,7 @@ const Index = () => {
 
       <Layout>
         <Banner />
-        <div className="my-20 mx-28">
+        <div className="my-20 lg:mx-28 px-10">
           <TopSellers />
           <LiveBidding />
         </div>

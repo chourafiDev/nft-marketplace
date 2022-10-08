@@ -20,7 +20,7 @@ const Banner = () => {
   return (
     <Slider {...settings}>
       <div className="banner-bg slider-1">
-        <div className="pt-20 pb-8 mx-28 flex flex-col gap-40">
+        <div className="pt-20 pb-8 lg:mx-28 px-10 flex flex-col gap-40">
           <div className="flex lg:flex-row flex-col gap-10 justify-between items-center">
             <div className="flex-1">
               <p className="border border-white/10 text-light rounded-lg py-2 px-4 text-[15px] inline-block mb-6">

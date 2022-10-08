@@ -22,7 +22,6 @@ const LiveBidding = () => {
           slidesToShow: 2,
           slidesToScroll: 2,
           infinite: true,
-          dots: true,
         },
       },
       {
@@ -31,6 +30,7 @@ const LiveBidding = () => {
           slidesToShow: 2,
           slidesToScroll: 2,
           initialSlide: 2,
+          dots: false,
         },
       },
       {
@@ -38,6 +38,7 @@ const LiveBidding = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: false,
         },
       },
     ],
