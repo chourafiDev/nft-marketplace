@@ -16,7 +16,7 @@ const Index = () => {
           <div className="flex items-center gap-6">
             <Logo />
             <div className="bg-white/10 h-10 w-[1px] lg:block hidden"></div>
-            <ul className="lg:flex items-center gap-7 text-light font-medium text-lg hidden">
+            <ul className="lg:flex items-center gap-4 text-light font-medium text-lg hidden">
               <NavLinks />
             </ul>
           </div>

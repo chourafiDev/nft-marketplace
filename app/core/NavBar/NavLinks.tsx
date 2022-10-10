@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { RiArrowDownSLine } from "react-icons/ri";
+
 import {
   allnfts,
   collectibles,
@@ -29,12 +31,15 @@ const NavLinks = () => {
     {
       link: "/",
       name: "Home",
-      images: [nft1, nft2, nft3, nft4, nft5, nft6, nft7, nft2, nft4],
+      submenu: true,
+      type: "images",
+      sublinks: [nft1, nft2, nft3, nft4, nft5, nft6, nft7, nft2, nft4],
     },
     {
       link: "/",
       name: "Explore",
       submenu: true,
+      type: "links",
       sublinks: [
         { link: "/", name: "ALL NFTs", icon: allnfts },
         { link: "/", name: "Solana NFTs", icon: solana },
@@ -53,6 +58,7 @@ const NavLinks = () => {
       link: "/",
       name: "Status",
       submenu: true,
+      type: "links",
       sublinks: [
         { link: "/", name: "Rankings", icon: "" },
         { link: "/", name: "Activity", icon: "" },
@@ -62,6 +68,7 @@ const NavLinks = () => {
       link: "/",
       name: "Resources",
       submenu: true,
+      type: "links",
       sublinks: [
         { link: "/", name: "Learn", icon: "" },
         { link: "/", name: "Help Center", icon: "" },
@@ -81,11 +88,19 @@ const NavLinks = () => {
       {links.map((link) => (
         <li key={link.name} className="relative group">
           <Link href={link.link}>
-            <a className="hover:text-white duration-200 ease-linear">
-              {link.name}
-            </a>
+            {link.submenu ? (
+              <a className="hover:text-white flex items-center gap-1 duration-200 ease-linear">
+                <p>{link.name}</p>
+                <RiArrowDownSLine />
+              </a>
+            ) : (
+              <a className="hover:text-white duration-200 ease-linear">
+                {link.name}
+              </a>
+            )}
           </Link>
-          {link.submenu && (
+
+          {link.submenu && link.type === "links" ? (
             <div
               className={`bg-transparent pt-6 absolute top-3 hidden hover:block group-hover:block duration-300 ease-linear`}
             >
@@ -116,16 +131,14 @@ const NavLinks = () => {
                 ))}
               </ul>
             </div>
-          )}
-
-          {link.images && (
+          ) : link.submenu && link.type === "images" ? (
             <div
               className={`bg-transparent pt-6 absolute top-7 hidden hover:block group-hover:block duration-300 ease-linear`}
             >
               <div className="custome-scrollbar w-[470%] overflow-y-scroll p-4 rounded-lg border border-white/10 bg-[#181822]">
                 <h2 className="text-white font-semibold text-xl">Top NFTs</h2>
                 <ul className="flex flex-wrap gap-2 mt-6">
-                  {link.images?.map((image, i) => (
+                  {link.sublinks.map((image, i) => (
                     <li key={i}>
                       <Link href="/">
                         <a>
@@ -143,7 +156,7 @@ const NavLinks = () => {
                 </ul>
               </div>
             </div>
-          )}
+          ) : null}
         </li>
       ))}
     </>

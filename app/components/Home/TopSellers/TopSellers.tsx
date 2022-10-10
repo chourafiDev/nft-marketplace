@@ -199,10 +199,10 @@ const TopSellers = () => {
       </Slider>
 
       <div className="text-center mt-20">
-        <h2 className="text-white font-semibold text-5xl">
+        <h2 className="text-white font-semibold md:text-5xl text-3xl">
           Explore, collect, and sell NFTs
         </h2>
-        <p className="mt-10 text-light space-y-3 px-28">
+        <p className="mt-10 text-light space-y-3 lg:px-28 px-5">
           <p>
             Amid the ongoing crypto market downturn, overall NFT sales volume
             remained largely flat in September. But while overall volume appears

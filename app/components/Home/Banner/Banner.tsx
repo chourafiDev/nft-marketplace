@@ -20,14 +20,14 @@ const Banner = () => {
   return (
     <Slider {...settings}>
       <div className="banner-bg slider-1">
-        <div className="pt-20 pb-8 lg:mx-28 px-10 flex flex-col gap-40">
+        <div className="pt-20 pb-8 lg:mx-28 md:px-10 px-5 flex flex-col gap-40">
           <div className="flex lg:flex-row flex-col gap-10 justify-between items-center">
             <div className="flex-1">
               <p className="border border-white/10 text-light rounded-lg py-2 px-4 text-[15px] inline-block mb-6">
                 Highest bit 1/20{" "}
                 <span className="text-primary ml-4">0.024wETH</span>
               </p>
-              <h1 className="text-white font-bold text-[4.3rem]">
+              <h1 className="text-white font-bold md:text-[4.3rem] text-[3rem]">
                 Collect Your Digital Product
               </h1>
 
@@ -39,21 +39,20 @@ const Banner = () => {
 
             <div className="flex-1">
               <div className="card p-8">
-                <div className="flex gap-8">
+                <div className="flex md:flex-row flex-col gap-8">
                   <div className="flex-auto">
                     <p className="text-white font-medium text-lg">
                       Winning bit
                     </p>
                     <div className="flex items-center gap-4 mt-5">
-                      <div className="p-[3px] hover:transform hover:scale-125 duration-200 ease-in cursor-pointer hover:z-30 w-[120px] h-[67px] bg-gradient-to-tr from-amber-500 to-fuchsia-700 rounded-full">
+                      <div className="flex p-[3px] hover:transform hover:scale-125 duration-200 ease-in cursor-pointer hover:z-30 w-[9rem] bg-gradient-to-tr from-amber-500 to-fuchsia-700 rounded-full">
                         <Image
                           src={client20}
                           alt="caesar clown"
                           className="rounded-full"
-                          // width={150}
-                          // height={150}
                         />
                       </div>
+
                       <p className="text-light font-medium">
                         Highest bit{" "}
                         <span className="text-white">caesar clown</span>{" "}
@@ -74,7 +73,7 @@ const Banner = () => {
                 </button>
               </div>
 
-              <div className="mt-10 flex justify-between">
+              <div className="mt-10 flex md:flex-row flex-col gap-10 justify-between">
                 <div>
                   <p className="text-light font-medium">Category</p>
                   <div className="flex items-center gap-2 mt-4">
@@ -127,53 +126,26 @@ const Banner = () => {
       </div>
 
       <div className="banner-bg slider-2">
-        <div className="pt-20 pb-8 mx-28 flex flex-col gap-40">
+        <div className="pt-20 pb-8 lg:mx-28 md:px-10 px-5 flex flex-col gap-40">
           <div className="flex lg:flex-row flex-col gap-10 justify-between items-center">
             <div className="flex-1">
               <p className="border border-white/10 text-light rounded-lg py-2 px-4 text-[15px] inline-block mb-6">
                 Highest bit 1/20{" "}
                 <span className="text-primary ml-4">0.024wETH</span>
               </p>
-              <h1 className="text-white font-bold text-[4.3rem]">
+              <h1 className="text-white font-bold md:text-[4.3rem] text-[3rem]">
                 New Dod Glitter Worlds
               </h1>
-              <div className="flex gap-3 items-center mt-4">
-                <div className="flex items-center -space-x-2">
-                  <div className="hover:transform hover:scale-125 duration-200 ease-in cursor-pointer hover:z-30 border-2 w-[45px] h-[45px] border-white/20 rounded-full">
-                    <Image
-                      src={client2}
-                      alt="client2"
-                      className="rounded-full"
-                      width={45}
-                      height={45}
-                    />
-                  </div>
-                  <div className="hover:transform hover:scale-125 duration-200 ease-in cursor-pointer hover:z-30 border-2 w-[45px] h-[45px] border-white/20 rounded-full">
-                    <Image
-                      src={client9}
-                      alt="client9"
-                      className="rounded-full"
-                      width={45}
-                      height={45}
-                    />
-                  </div>
-                  <div className="hover:transform hover:scale-125 duration-200 ease-in cursor-pointer hover:z-30 border-2 w-[45px] h-[45px] border-white/20 rounded-full">
-                    <Image
-                      src={client11}
-                      alt="client11"
-                      className="rounded-full"
-                      width={45}
-                      height={45}
-                    />
-                  </div>
-                </div>
-                <p className="text-light font-medium">15+ Place Bit</p>
-              </div>
+
+              <ProfileTooltip
+                images={[client2, client9, client11]}
+                places="15+"
+              />
             </div>
 
             <div className="flex-1">
               <div className="card p-8">
-                <div className="flex gap-8">
+                <div className="flex md:flex-row flex-col gap-10">
                   <div className="flex-auto">
                     <p className="text-white font-medium text-lg">
                       Winning bit
@@ -184,8 +156,6 @@ const Banner = () => {
                           src={client20}
                           alt="caesar clown"
                           className="rounded-full"
-                          // width={150}
-                          // height={150}
                         />
                       </div>
                       <p className="text-light font-medium">
@@ -208,7 +178,7 @@ const Banner = () => {
                 </button>
               </div>
 
-              <div className="mt-10 flex justify-between">
+              <div className="mt-10 flex md:flex-row flex-col gap-10 justify-between">
                 <div>
                   <p className="text-light font-medium">Category</p>
                   <div className="flex items-center gap-2 mt-4">
@@ -261,53 +231,26 @@ const Banner = () => {
       </div>
 
       <div className="banner-bg slider-3">
-        <div className="pt-20 pb-8 mx-28 flex flex-col gap-40">
+        <div className="pt-20 pb-8 lg:mx-28 md:px-10 px-5 flex flex-col gap-40">
           <div className="flex lg:flex-row flex-col gap-10 justify-between items-center">
             <div className="flex-1">
               <p className="border border-white/10 text-light rounded-lg py-2 px-4 text-[15px] inline-block mb-6">
                 Highest bit 1/20{" "}
                 <span className="text-primary ml-4">0.024wETH</span>
               </p>
-              <h1 className="text-white font-bold text-[4.3rem]">
+              <h1 className="text-white font-bold md:text-[4.3rem] text-[3rem]">
                 Digital Dod Glitter Worlds
               </h1>
-              <div className="flex gap-3 items-center mt-4">
-                <div className="flex items-center -space-x-2">
-                  <div className="hover:transform hover:scale-125 duration-200 ease-in cursor-pointer hover:z-30 border-2 w-[45px] h-[45px] border-white/20 rounded-full">
-                    <Image
-                      src={client2}
-                      alt="client2"
-                      className="rounded-full"
-                      width={45}
-                      height={45}
-                    />
-                  </div>
-                  <div className="hover:transform hover:scale-125 duration-200 ease-in cursor-pointer hover:z-30 border-2 w-[45px] h-[45px] border-white/20 rounded-full">
-                    <Image
-                      src={client9}
-                      alt="client9"
-                      className="rounded-full"
-                      width={45}
-                      height={45}
-                    />
-                  </div>
-                  <div className="hover:transform hover:scale-125 duration-200 ease-in cursor-pointer hover:z-30 border-2 w-[45px] h-[45px] border-white/20 rounded-full">
-                    <Image
-                      src={client11}
-                      alt="client11"
-                      className="rounded-full"
-                      width={45}
-                      height={45}
-                    />
-                  </div>
-                </div>
-                <p className="text-light font-medium">15+ Place Bit</p>
-              </div>
+
+              <ProfileTooltip
+                images={[client2, client9, client11]}
+                places="15+"
+              />
             </div>
 
             <div className="flex-1">
               <div className="card p-8">
-                <div className="flex gap-8">
+                <div className="flex md:flex-row flex-col gap-10">
                   <div className="flex-auto">
                     <p className="text-white font-medium text-lg">
                       Winning bit
@@ -318,8 +261,6 @@ const Banner = () => {
                           src={client20}
                           alt="caesar clown"
                           className="rounded-full"
-                          // width={150}
-                          // height={150}
                         />
                       </div>
                       <p className="text-light font-medium">
@@ -342,7 +283,7 @@ const Banner = () => {
                 </button>
               </div>
 
-              <div className="mt-10 flex justify-between">
+              <div className="mt-10 flex md:flex-row flex-col gap-10 justify-between">
                 <div>
                   <p className="text-light font-medium">Category</p>
                   <div className="flex items-center gap-2 mt-4">
