@@ -26,6 +26,17 @@ import nft4 from "./nfts/nft-04.jpg";
 import nft5 from "./nfts/nft-05.jpg";
 import nft6 from "./nfts/nft-06.jpg";
 import nft7 from "./nfts/nft-07.jpg";
+import allnfts from "./icons/allnfts.svg";
+import collectibles from "./icons/collectibles.svg";
+import domainNames from "./icons/domain-names.svg";
+import music from "./icons/music.svg";
+import photography from "./icons/photography-category.svg";
+import solana from "./icons/solana.svg";
+import sports from "./icons/sports.svg";
+import trading from "./icons/trading-cards.svg";
+import utility from "./icons/utility.svg";
+import virtualWorlds from "./icons/virtual-worlds.svg";
+import art from "./icons/art.svg";
 
 export {
   logo,
@@ -56,4 +67,15 @@ export {
   nft5,
   nft6,
   nft7,
+  allnfts,
+  collectibles,
+  domainNames,
+  music,
+  photography,
+  solana,
+  sports,
+  art,
+  trading,
+  utility,
+  virtualWorlds,
 };

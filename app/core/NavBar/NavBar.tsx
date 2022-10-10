@@ -10,8 +10,8 @@ const Index = () => {
   };
 
   return (
-    <nav>
-      <div className="sticky top-0 lg:px-28 px-10 py-5 border-b border-white/10 bg-[#181822]/80 backdrop-blur-[8px] z-50">
+    <nav className="sticky top-0 z-50">
+      <div className="lg:px-28 px-10 py-5 border-b border-white/10 bg-[#181822]/80 backdrop-blur-[8px]">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-6">
             <Logo />

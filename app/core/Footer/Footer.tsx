@@ -44,37 +44,37 @@ const Footer = () => {
           <ul className="text-light space-y-2 font-normal text-lg tracking-wide">
             <li>
               <Link href="/">
-                <a>Protocol Explore</a>
+                <a className="link-hover">Protocol Explore</a>
               </Link>
             </li>
             <li>
               <Link href="/">
-                <a>System Token</a>
+                <a className="link-hover">System Token</a>
               </Link>
             </li>
             <li>
               <Link href="/">
-                <a>Otimize Time</a>
+                <a className="link-hover">Otimize Time</a>
               </Link>
             </li>
             <li>
               <Link href="/">
-                <a>Visual Checking</a>
+                <a className="link-hover">Visual Checking</a>
               </Link>
             </li>
             <li>
               <Link href="/">
-                <a>Fadeup System</a>
+                <a className="link-hover">Fadeup System</a>
               </Link>
             </li>
             <li>
               <Link href="/">
-                <a>Activity Log</a>
+                <a className="link-hover">Activity Log</a>
               </Link>
             </li>
             <li>
               <Link href="/">
-                <a>System Auto Since</a>
+                <a className="link-hover">System Auto Since</a>
               </Link>
             </li>
           </ul>
@@ -86,37 +86,37 @@ const Footer = () => {
           <ul className="text-light space-y-2 font-normal text-lg tracking-wide">
             <li>
               <Link href="/">
-                <a>Market Explore</a>
+                <a className="link-hover">Market Explore</a>
               </Link>
             </li>
             <li>
               <Link href="/">
-                <a>Ready Token</a>
+                <a className="link-hover">Ready Token</a>
               </Link>
             </li>
             <li>
               <Link href="/">
-                <a>Main Option</a>
+                <a className="link-hover">Main Option</a>
               </Link>
             </li>
             <li>
               <Link href="/">
-                <a>Product Checking</a>
+                <a className="link-hover">Product Checking</a>
               </Link>
             </li>
             <li>
               <Link href="/">
-                <a>Blog Grid</a>
+                <a className="link-hover">Blog Grid</a>
               </Link>
             </li>
             <li>
               <Link href="/">
-                <a>About Us</a>
+                <a className="link-hover">About Us</a>
               </Link>
             </li>
             <li>
               <Link href="/">
-                <a>Fix Bug</a>
+                <a className="link-hover">Fix Bug</a>
               </Link>
             </li>
           </ul>

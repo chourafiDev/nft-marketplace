@@ -26,40 +26,40 @@ const Timer = ({ countDownTimestampMS }: { countDownTimestampMS: number }) => {
     <div className="flex items-center mt-5">
       <div className="w-14 flex justify-center">
         <div className="text-center">
-          <span className="text-white font-semibold bg-dark/70 text-lg px-3 py-1 rounded-md time-w">
+          <span className="text-white font-semibold bg-dark/70 backdrop-blur-lg text-lg px-3 py-1 rounded-md time-w">
             {remainingTime.days}
           </span>
-          <p className="text-light mt-1 text-[14px]">DAY</p>
+          <p className="text-light mt-1 text-center text-[13px]">DAY</p>
         </div>
 
         <span className="text-light ml-[2px]">:</span>
       </div>
       <div className="w-14 flex justify-center">
         <div className="text-center">
-          <span className="text-white font-semibold bg-dark/70 text-lg px-3 py-1 rounded-md time-w">
+          <span className="text-white font-semibold bg-dark/70 backdrop-blur-lg text-lg px-3 py-1 rounded-md time-w">
             {remainingTime.hours}
           </span>
-          <p className="text-light mt-1 text-center text-[14px]">HR&apos;S</p>
+          <p className="text-light mt-1 text-center text-[13px]">HR&apos;S</p>
         </div>
 
         <span className="text-light ml-[2px]">:</span>
       </div>
       <div className="w-14 flex justify-center">
         <div className="text-center">
-          <span className="text-white font-semibold bg-dark/70 text-lg px-3 py-1 rounded-md time-w">
+          <span className="text-white font-semibold bg-dark/70 backdrop-blur-lg text-lg px-3 py-1 rounded-md time-w">
             {remainingTime.minutes}
           </span>
-          <p className="text-light mt-1 text-center text-[14px]">MIN&apos;S</p>
+          <p className="text-light mt-1 text-center text-[13px]">MIN&apos;S</p>
         </div>
 
         <span className="text-light ml-[2px]">:</span>
       </div>
       <div className="w-14 flex justify-center">
         <div className="text-center">
-          <span className="text-white font-semibold bg-dark/70 text-lg px-3 py-1 rounded-md time-w">
+          <span className="text-white font-semibold bg-dark/70 backdrop-blur-lg text-lg px-3 py-1 rounded-md time-w">
             {remainingTime.seconds}
           </span>
-          <p className="text-light mt-1 text-center text-[14px]">SEC</p>
+          <p className="text-light mt-1 text-center text-[13px]">SEC</p>
         </div>
       </div>
     </div>

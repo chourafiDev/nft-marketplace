@@ -43,6 +43,7 @@ export const products = [
       { type: "ASTRAGENAKAR", value: "BASTARD" },
       { type: "CITY", value: "TOKYO" },
     ],
+    experation: "2022-11-30",
   },
   {
     id: "0002",
@@ -71,6 +72,7 @@ export const products = [
       { type: "ASTRAGENAKAR", value: "BASTARD" },
       { type: "CITY", value: "TOKYO" },
     ],
+    experation: "2022-12-20",
   },
   {
     id: "0003",
@@ -99,6 +101,7 @@ export const products = [
       { type: "ASTRAGENAKAR", value: "BASTARD" },
       { type: "CITY", value: "TOKYO" },
     ],
+    experation: "2022-12-26",
   },
   {
     id: "0004",
@@ -127,6 +130,7 @@ export const products = [
       { type: "ASTRAGENAKAR", value: "BASTARD" },
       { type: "CITY", value: "TOKYO" },
     ],
+    experation: "2022-11-15",
   },
   {
     id: "0005",
@@ -155,5 +159,6 @@ export const products = [
       { type: "ASTRAGENAKAR", value: "BASTARD" },
       { type: "CITY", value: "TOKYO" },
     ],
+    experation: "2022-11-26",
   },
 ];

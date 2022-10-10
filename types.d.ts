@@ -9,6 +9,7 @@ export interface Product {
   images: StaticImageData[];
   property: Property[];
   category: Property[];
+  experation: string;
 }
 
 export interface Owner {

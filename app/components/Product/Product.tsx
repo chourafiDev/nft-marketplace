@@ -4,21 +4,29 @@ import { Product } from "../../../types";
 import ProfileTooltip from "../ProfileTooltip/ProfileTooltip";
 import { BiDotsHorizontalRounded, BiHeart } from "react-icons/bi";
 import Link from "next/link";
+import { Timer } from "..";
 
 interface IProps {
   product: Product;
+  timeStamp: number;
 }
 
-const Product = ({ product }: IProps) => {
+const Product = ({ product, timeStamp }: IProps) => {
   return (
     <div className="bg-dark p-1 rounded-lg product">
-      <Image
-        src={product.cover}
-        alt={product.title}
-        className="rounded-lg product-image duration-700 ease-liner object-cover"
-        width={500}
-        height={500}
-      />
+      <div className="relative">
+        <Image
+          src={product.cover}
+          alt={product.title}
+          className="rounded-lg product-image duration-700 ease-liner object-cover"
+          width={500}
+          height={500}
+        />
+        <div className="absolute bottom-4 left-2">
+          <Timer countDownTimestampMS={timeStamp} />
+        </div>
+      </div>
+
       <div className="px-5 pb-5">
         <div className="flex items-center justify-between my-4 text-sm">
           <div className="flex gap-2 items-center">

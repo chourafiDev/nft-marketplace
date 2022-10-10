@@ -5,9 +5,12 @@ import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import dayjs from "dayjs";
 
 const LiveBidding = () => {
   const sliderRef = useRef<Slider>(null);
+
+  console.log("timestamp", new Date("2022-04-26").getTime());
 
   const settings = {
     arrows: false,
@@ -72,8 +75,11 @@ const LiveBidding = () => {
         </div>
         <Slider ref={sliderRef} {...settings}>
           {products.map((product) => (
-            <div key={product.id} className="md:p-[14px] px-0">
-              <Product product={product} />
+            <div key={product.id} className="md:p-[10px] px-0">
+              <Product
+                product={product}
+                timeStamp={new Date(product.experation).getTime()}
+              />
             </div>
           ))}
         </Slider>

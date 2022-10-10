@@ -41,6 +41,29 @@ body::before {
   }
 }
 
+.link-hover {
+  position: relative;
+}
+
+.link-hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: #00a3ff;
+  bottom: -3px;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.link-hover:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
 /* Banner section */
 .banner-bg {
   position: relative;
@@ -146,6 +169,18 @@ body::before {
 .slider-area .slick-slide {
   padding: 0 10px;
 }
-/* .slider-area .slick-list {
-  padding: 0 -10px;
-} */
+
+/* Custome scrollbar */
+.custome-scrollbar::-webkit-scrollbar {
+  width: 0.3em;
+  height: 0.3em;
+}
+
+.custome-scrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #313146;
+}
+
+.custome-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #00a3ff;
+  border-radius: 0 10px 10px 0;
+}
