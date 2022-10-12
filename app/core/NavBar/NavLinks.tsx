@@ -104,7 +104,7 @@ const NavLinks = () => {
             <div
               className={`bg-transparent pt-6 absolute top-3 hidden hover:block group-hover:block duration-300 ease-linear`}
             >
-              <ul className="custome-scrollbar max-h-[34rem] w-64 group-hover:opacity-100 hover:opacity-100 group-hover:translate-y-4 opacity-0 overflow-y-scroll p-4 rounded-lg border border-white/10 bg-[#181822] lg:flex flex-col gap-4 text-light font-medium text-lg">
+              <ul className="custome-scrollbar navbar-scrollbar max-h-[34rem] w-64 group-hover:opacity-100 hover:opacity-100 group-hover:translate-y-4 opacity-0 overflow-y-scroll p-4 rounded-lg border border-white/10 bg-[#181822] lg:flex flex-col gap-4 text-light font-medium text-lg">
                 {link.sublinks?.map((sublink) => (
                   <li key={sublink.name}>
                     <Link href={sublink.link}>

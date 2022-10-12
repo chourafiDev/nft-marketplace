@@ -21,10 +21,6 @@ const TopSellers = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     centerPadding: "60px",
-    autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 2000,
-    cssEase: "linear",
     responsive: [
       {
         breakpoint: 1024,

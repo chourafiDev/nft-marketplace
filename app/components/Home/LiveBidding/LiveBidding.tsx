@@ -17,6 +17,7 @@ const LiveBidding = () => {
     infinite: true,
     speed: 500,
     slidesToScroll: 1,
+    centerPadding: "60px",
     slidesToShow: 4,
     responsive: [
       {

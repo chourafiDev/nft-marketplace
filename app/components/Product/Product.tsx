@@ -13,7 +13,7 @@ interface IProps {
 
 const Product = ({ product, timeStamp }: IProps) => {
   return (
-    <div className="bg-dark p-1 rounded-lg product">
+    <div className="bg-[#242435] p-1 rounded-lg product">
       <div className="relative">
         <Image
           src={product.cover}

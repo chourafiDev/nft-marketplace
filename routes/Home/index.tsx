@@ -2,7 +2,12 @@ import Head from "next/head";
 
 //Components
 import Layout from "../../app/core/layout";
-import { Banner, TopSellers, LiveBidding } from "../../app/components/Home";
+import {
+  Banner,
+  TopSellers,
+  LiveBidding,
+  AllNFTs,
+} from "../../app/components/Home";
 
 const Index = () => {
   return (
@@ -18,6 +23,7 @@ const Index = () => {
         <div className="my-20 lg:mx-28 md:px-10 px-5">
           <TopSellers />
           <LiveBidding />
+          <AllNFTs />
         </div>
       </Layout>
     </>

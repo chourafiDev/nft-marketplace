@@ -1,11 +1,10 @@
 import Image from "next/image";
 import { BsSuitHeart, BsThreeDots } from "react-icons/bs";
 import { client2, client9, client11, client20 } from "../../../../assets";
-import { Timer } from "../../index";
+import { Timer, ProfileTooltip } from "../../index";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ProfileTooltip from "../../ProfileTooltip/ProfileTooltip";
 
 const Banner = () => {
   const settings = {
