@@ -7,6 +7,7 @@ import {
   TopSellers,
   LiveBidding,
   AllNFTs,
+  Services,
 } from "../../app/components/Home";
 
 const Index = () => {
@@ -24,6 +25,7 @@ const Index = () => {
           <TopSellers />
           <LiveBidding />
           <AllNFTs />
+          <Services />
         </div>
       </Layout>
     </>

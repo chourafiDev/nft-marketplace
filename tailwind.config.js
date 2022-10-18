@@ -14,6 +14,11 @@ module.exports = {
         black: "#13131d",
         light: "#ACACAC",
       },
+      backgroundImage: {
+        shape1: 'url("../assets/icons/shape-1.png")',
+        shape5: 'url("../assets/icons/shape-5.png")',
+        shape6: 'url("../assets/icons/shape-6.png")',
+      },
     },
   },
   plugins: [],
