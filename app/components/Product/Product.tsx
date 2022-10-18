@@ -22,7 +22,7 @@ const Product = ({ product, timeStamp }: IProps) => {
           width={500}
           height={500}
         />
-        <div className="absolute bottom-4 left-2">
+        <div className="absolute bottom-4 left-[3px] w-full flex justify-center">
           <Timer countDownTimestampMS={timeStamp} />
         </div>
       </div>

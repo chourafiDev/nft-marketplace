@@ -77,13 +77,13 @@ body::before {
 }
 
 .slider-1 {
-  background-image: url("../assets/bg-image-1.jpg");
+  background-image: url("../assets/backgrounds/bg-image-1.jpg");
 }
 .slider-2 {
-  background-image: url("../assets/bg-image-2.jpg");
+  background-image: url("../assets/backgrounds/bg-image-2.jpg");
 }
 .slider-3 {
-  background-image: url("../assets/bg-image-3.jpg");
+  background-image: url("../assets/backgrounds/bg-image-3.jpg");
 }
 
 .banner-bg::before {
@@ -170,7 +170,7 @@ body::before {
 }
 
 .slider-area .slick-slide {
-  padding: 0 10px;
+  padding: 5px;
 }
 
 /* Custome scrollbar */
