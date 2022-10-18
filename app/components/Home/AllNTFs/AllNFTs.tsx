@@ -147,14 +147,14 @@ const AllNFTs = () => {
         Our All NFT&apos;S
       </h2>
 
-      <div className="flex gap-6 mt-8">
+      <div className="flex lg:flex-row flex-col gap-6 mt-8">
         <div className="custome-scrollbar card-scrollbar max-h-[90rem] overflow-y-scroll border border-white/10 rounded-md">
           <div className="bg-dark p-4 flex gap-3 sticky top-0 z-30">
             <button
               onClick={() => getAllNFTs()}
               className={`${
                 all ? "bg-dark" : undefined
-              } px-6 py-3 border border-dashed border-white/10 hover:border-white duration-100 ease-linear text-white rounded-md`}
+              } md:px-6 px-2 md:py-3 py-2 border border-dashed border-white/10 hover:border-white duration-100 ease-linear text-white rounded-md`}
             >
               All Products
             </button>
@@ -162,7 +162,7 @@ const AllNFTs = () => {
               onClick={() => getNewestNFTs()}
               className={`${
                 newest ? "bg-dark" : undefined
-              } px-6 py-3 border border-dashed border-white/10 hover:border-white duration-100 ease-linear text-white rounded-md`}
+              } md:px-6 px-2 md:py-3 py-2 border border-dashed border-white/10 hover:border-white duration-100 ease-linear text-white rounded-md`}
             >
               Newest Item
             </button>
@@ -170,7 +170,7 @@ const AllNFTs = () => {
               onClick={() => getRaeRealsNFTs()}
               className={`${
                 rareReals ? "bg-dark" : undefined
-              } px-6 py-3 border border-dashed border-white/10 hover:border-white duration-100 ease-linear text-white rounded-md`}
+              } md:px-6 px-2 md:py-3 py-2 border border-dashed border-white/10 hover:border-white duration-100 ease-linear text-white rounded-md`}
             >
               Rare Reals
             </button>
@@ -180,7 +180,7 @@ const AllNFTs = () => {
             {all &&
               card.map((el, index) => (
                 <div
-                  className="card-transparent flex items-center gap-4"
+                  className="card-transparent flex md:flex-row flex-col items-center gap-4"
                   key={index}
                 >
                   <div className="rounded-md overflow-hidden flex">
@@ -191,7 +191,7 @@ const AllNFTs = () => {
                     />
                   </div>
 
-                  <div className="flex gap-16 items-center">
+                  <div className="flex md:flex-row flex-col md:gap-16 gap-8 items-center">
                     <div className="space-y-4">
                       <div className="flex gap-2 items-center">
                         <div className="flex items-center -space-x-2">
