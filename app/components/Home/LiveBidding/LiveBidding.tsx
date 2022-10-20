@@ -1,16 +1,13 @@
 import { useRef } from "react";
 import { products } from "../../../../utils/data";
-import Product from "../../Product/Product";
+import { Product } from "../../../components";
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import dayjs from "dayjs";
 
 const LiveBidding = () => {
   const sliderRef = useRef<Slider>(null);
-
-  console.log("timestamp", new Date("2022-04-26").getTime());
 
   const settings = {
     arrows: false,
