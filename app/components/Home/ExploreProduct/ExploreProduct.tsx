@@ -323,9 +323,9 @@ const ExploreProduct = () => {
         </div> */}
       </div>
 
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-4 mt-8 w-full">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mt-8 w-full">
         {products.map((product) => (
-          <div key={product.id} className="md:p-[10px] px-0">
+          <div key={product.id}>
             <Product
               product={product}
               timeStamp={new Date(product.experation).getTime()}

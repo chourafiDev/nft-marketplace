@@ -120,7 +120,7 @@ body::before {
   transition: all 0.5s;
 }
 .product:hover:before {
-  transform: rotate(2deg) translateX(-7px) translateY(11px);
+  transform: rotate(2deg) translateX(-9px) translateY(11px);
 }
 .product:hover .product-image {
   transform: scale(1.1);

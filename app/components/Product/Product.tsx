@@ -13,15 +13,17 @@ interface IProps {
 
 const Product = ({ product, timeStamp }: IProps) => {
   return (
-    <div className="bg-[#242435] p-1 rounded-lg product">
+    <div className="bg-[#242435] p-1 rounded-lg product group">
       <div className="relative">
-        <Image
-          src={product.cover}
-          alt={product.title}
-          className="rounded-lg product-image duration-700 ease-liner object-cover"
-          width={500}
-          height={500}
-        />
+        <div className="rounded-lg overflow-hidden">
+          <Image
+            src={product.cover}
+            alt={product.title}
+            className="transform group-hover:scale-110 duration-700 ease-liner object-cover"
+            width={500}
+            height={500}
+          />
+        </div>
         <div className="absolute bottom-4 left-[3px] w-full flex justify-center">
           <Timer countDownTimestampMS={timeStamp} />
         </div>
