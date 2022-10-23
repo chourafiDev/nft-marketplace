@@ -190,3 +190,10 @@ body::before {
   background-color: #00a3ff;
   border-radius: 0 10px 10px 0;
 }
+
+@media (max-width: 1024px) {
+  .stickyBox {
+    position: inherit !important;
+    top: inherit !important;
+  }
+}

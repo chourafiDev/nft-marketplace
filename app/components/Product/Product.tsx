@@ -8,7 +8,7 @@ import { Timer } from "..";
 
 interface IProps {
   product: Product;
-  timeStamp: number;
+  timeStamp?: number;
 }
 
 const Product = ({ product, timeStamp }: IProps) => {
@@ -25,7 +25,7 @@ const Product = ({ product, timeStamp }: IProps) => {
           />
         </div>
         <div className="absolute bottom-4 left-[3px] w-full flex justify-center">
-          <Timer countDownTimestampMS={timeStamp} />
+          {timeStamp && <Timer countDownTimestampMS={timeStamp} />}
         </div>
       </div>
 

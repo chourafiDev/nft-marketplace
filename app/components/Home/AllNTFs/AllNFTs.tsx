@@ -16,6 +16,8 @@ import {
 } from "../../../../assets";
 import Link from "next/link";
 
+import { useStickyBox } from "react-sticky-box";
+
 const AllNFTs = () => {
   const data = [
     {
@@ -141,13 +143,14 @@ const AllNFTs = () => {
     }
   };
 
+  const stickyRef = useStickyBox({ offsetTop: 100 });
+
   return (
     <div className="mt-32">
       <h2 className="text-white font-semibold text-[1.8rem] uppercase">
         Our All NFT&apos;S
       </h2>
-
-      <div className="flex lg:flex-row flex-col gap-6 mt-8">
+      <div className="flex w-full lg:flex-row flex-col gap-6 mt-8">
         <div className="custome-scrollbar card-scrollbar max-h-[90rem] overflow-y-scroll border border-white/10 rounded-md">
           <div className="bg-dark p-4 flex gap-3 sticky top-0 z-30">
             <button
@@ -395,97 +398,90 @@ const AllNFTs = () => {
           </div>
         </div>
 
-        <div>
-          <StickyBox offsetTop={20} style={{ top: "90px" }}>
-            <div>
-              <div className="w-full card-transparent overflow-hidden p-0 h-64 custome-scrollbar card-scrollbar overflow-y-scroll ">
-                <div className="flex justify-between items-center bg-dark px-4 py-2 sticky top-0 z-20">
-                  <h2 className="text-white font-medium text-[17px]">
-                    Notification
-                  </h2>
-                  <button className="btn btn-primary flex gap-1 items-center px-3 py-2">
-                    <span>Newest</span>
-                    <RiArrowDownSLine />
-                  </button>
-                </div>
-                <div className="py-8 px-6">
-                  {data.map((el, i) => (
-                    <>
-                      <div className="group" key={i}>
-                        <div className="flex gap-3">
-                          <div className="flex p-[3px] group-hover:bg-primary duration-200 ease-in cursor-pointer hover:z-30 w-[3.5rem] h-[3.5rem] bg-dark rounded-full">
-                            <Image
-                              src={el.image}
-                              alt="client 1"
-                              className="rounded-full"
-                            />
-                          </div>
-                          <div className="space-y-1">
-                            <h3 className="text-white text-[18px]">
-                              {el.name}
-                            </h3>
-                            <p className="text-light">{el.desc}</p>
-                            <p className="flex gap-8 text-light text-sm pb-2">
-                              <span>{el.date}</span>
-                              <span>{el.time}</span>
-                            </p>
-                            <button className="btn btn-dark py-0 px-3 text-sm rounded-xl">
-                              Check Out
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <hr className="border-t border-white/10 my-4" />
-                    </>
-                  ))}
-                </div>
-              </div>
-
-              <div className="w-full card-transparent overflow-hidden p-0 h-64 custome-scrollbar card-scrollbar overflow-y-scroll mt-10">
-                <div className="flex justify-between items-center bg-dark px-4 py-2 sticky top-0 z-20">
-                  <h2 className="text-white font-medium text-[17px]">
-                    Top Artist
-                  </h2>
-                  <button className="btn btn-primary flex gap-1 items-center px-3 py-2">
-                    <span>Today</span>
-                    <RiArrowDownSLine />
-                  </button>
-                </div>
-                <div className="py-8 px-6">
-                  {data.map((el, i) => (
-                    <>
-                      <div className="group" key={i}>
-                        <div className="flex gap-3">
-                          <div className="flex p-[3px] group-hover:bg-primary duration-200 ease-in cursor-pointer hover:z-30 w-[3.5rem] h-[3.5rem] bg-dark rounded-full">
-                            <Image
-                              src={el.image}
-                              alt="client 1"
-                              className="rounded-full"
-                            />
-                          </div>
-                          <div className="space-y-1">
-                            <h3 className="text-white text-[18px]">
-                              {el.name}
-                            </h3>
-                            <p className="text-light">{el.desc}</p>
-                            <p className="flex gap-8 text-light text-sm pb-2">
-                              <span>{el.date}</span>
-                              <span>{el.time}</span>
-                            </p>
-                            <button className="btn btn-dark py-0 px-3 text-sm rounded-xl">
-                              Check Out
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <hr className="border-t border-white/10 my-4" />
-                    </>
-                  ))}
-                </div>
-              </div>
+        <aside>
+          <div className="card-transparent overflow-hidden p-0 h-64 custome-scrollbar card-scrollbar overflow-y-scroll ">
+            <div className="flex justify-between items-center bg-dark px-4 py-2 sticky top-0 z-20">
+              <h2 className="text-white font-medium text-[17px]">
+                Notification
+              </h2>
+              <button className="btn btn-primary flex gap-1 items-center px-3 py-2">
+                <span>Newest</span>
+                <RiArrowDownSLine />
+              </button>
             </div>
-          </StickyBox>
-        </div>
+            <div className="py-8 px-6">
+              {data.map((el, i) => (
+                <>
+                  <div className="group" key={i}>
+                    <div className="flex gap-3">
+                      <div className="flex p-[3px] group-hover:bg-primary duration-200 ease-in cursor-pointer hover:z-30 w-[3.5rem] h-[3.5rem] bg-dark rounded-full">
+                        <Image
+                          src={el.image}
+                          alt="client 1"
+                          className="rounded-full"
+                        />
+                      </div>
+                      <div className="space-y-1">
+                        <h3 className="text-white text-[18px]">{el.name}</h3>
+                        <p className="text-light">{el.desc}</p>
+                        <p className="flex gap-8 text-light text-sm pb-2">
+                          <span>{el.date}</span>
+                          <span>{el.time}</span>
+                        </p>
+                        <button className="btn btn-dark py-0 px-3 text-sm rounded-xl">
+                          Check Out
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="border-t border-white/10 my-4" />
+                </>
+              ))}
+            </div>
+          </div>
+
+          <div
+            ref={stickyRef}
+            className="card-transparent overflow-hidden p-0 h-64 custome-scrollbar card-scrollbar overflow-y-scroll mt-10"
+          >
+            <div className="flex justify-between items-center bg-dark px-4 py-2 sticky top-0 z-20">
+              <h2 className="text-white font-medium text-[17px]">Top Artist</h2>
+              <button className="btn btn-primary flex gap-1 items-center px-3 py-2">
+                <span>Today</span>
+                <RiArrowDownSLine />
+              </button>
+            </div>
+            <div className="py-8 px-6">
+              {data.map((el, i) => (
+                <>
+                  <div className="group" key={i}>
+                    <div className="flex gap-3">
+                      <div className="flex p-[3px] group-hover:bg-primary duration-200 ease-in cursor-pointer hover:z-30 w-[3.5rem] h-[3.5rem] bg-dark rounded-full">
+                        <Image
+                          src={el.image}
+                          alt="client 1"
+                          className="rounded-full"
+                        />
+                      </div>
+                      <div className="space-y-1">
+                        <h3 className="text-white text-[18px]">{el.name}</h3>
+                        <p className="text-light">{el.desc}</p>
+                        <p className="flex gap-8 text-light text-sm pb-2">
+                          <span>{el.date}</span>
+                          <span>{el.time}</span>
+                        </p>
+                        <button className="btn btn-dark py-0 px-3 text-sm rounded-xl">
+                          Check Out
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="border-t border-white/10 my-4" />
+                </>
+              ))}
+            </div>
+          </div>
+        </aside>
       </div>
     </div>
   );
