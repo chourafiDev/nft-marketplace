@@ -1,5 +1,6 @@
 import { IoIosNotificationsOutline } from "react-icons/io";
-import { MdOutlineLightMode } from "react-icons/md";
+import { HiOutlineUpload } from "react-icons/hi";
+import Link from "next/link";
 
 const NavButtons = () => {
   return (
@@ -11,9 +12,11 @@ const NavButtons = () => {
         </span>
         <IoIosNotificationsOutline size={22} />
       </button>
-      <button className="text-light border border-white/10 rounded-full p-2 hover:bg-white/5 duration-200 ease-in">
-        <MdOutlineLightMode size={22} />
-      </button>
+      <Link href="/create">
+        <a className="text-light border border-white/10 rounded-full p-2 hover:bg-white/5 duration-200 ease-in">
+          <HiOutlineUpload size={22} />
+        </a>
+      </Link>
     </div>
   );
 };

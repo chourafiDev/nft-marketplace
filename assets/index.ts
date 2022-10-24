@@ -10,6 +10,7 @@ import shape7 from "./icons/shape-7.png";
 import portfolio01 from "./portfolio/portfolio-01.jpg";
 import portfolio02 from "./portfolio/portfolio-02.jpg";
 import portfolio03 from "./portfolio/portfolio-03.jpg";
+import portfolio05 from "./portfolio/portfolio-05.jpg";
 
 //Backrounds
 import bgImage1 from "./backgrounds/bg-image-1.jpg";
@@ -81,6 +82,7 @@ export {
   portfolio01,
   portfolio02,
   portfolio03,
+  portfolio05,
   bgImage1,
   bgImage2,
   bgImage3,

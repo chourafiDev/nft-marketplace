@@ -1,21 +1,11 @@
-import Link from "next/link";
-import { FiChevronRight } from "react-icons/fi";
+import React from "react";
 
-const Breadcrumb = () => {
+type BreadcrumbProps = { children: React.ReactNode };
+
+const Breadcrumb = ({ children }: BreadcrumbProps) => {
   return (
     <div className="flex md:flex-row flex-col gap-3 justify-between items-center lg:px-28 px-10 py-8 border-b border-white/10">
-      <h1 className="text-2xl text-white font-semibold">Product Details</h1>
-      <div className="flex items-center gap-2">
-        <Link href="#">
-          <a className="text-light hover:text-white duration-150 ease-linear">
-            Home
-          </a>
-        </Link>
-        <FiChevronRight className="text-light" />
-        <Link href="#">
-          <a className="text-white">Product Details</a>
-        </Link>
-      </div>
+      {children}
     </div>
   );
 };

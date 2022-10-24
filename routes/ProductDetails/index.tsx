@@ -7,6 +7,8 @@ import {
   BsSuitHeart,
   BsThreeDots,
 } from "react-icons/bs";
+import { FiChevronRight } from "react-icons/fi";
+
 import StickyBox from "react-sticky-box";
 import {
   client1,
@@ -101,7 +103,20 @@ const ProductDetails = () => {
       </Head>
 
       <Layout>
-        <Breadcrumb />
+        <Breadcrumb>
+          <h1 className="text-2xl text-white font-semibold">Product Details</h1>
+          <div className="flex items-center gap-2">
+            <Link href="#">
+              <a className="text-light hover:text-white duration-150 ease-linear">
+                Home
+              </a>
+            </Link>
+            <FiChevronRight className="text-light" />
+            <Link href="#">
+              <a className="text-white">Product Details</a>
+            </Link>
+          </div>
+        </Breadcrumb>
         <div className="my-20 lg:mx-20 md:px-10 px-5">
           <div className="flex lg:flex-row flex-col w-full items-start gap-12 justify-between">
             <StickyBox
