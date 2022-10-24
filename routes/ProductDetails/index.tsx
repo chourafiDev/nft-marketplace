@@ -2,7 +2,11 @@ import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { products } from "../../utils/data";
-import { BsSuitHeart, BsThreeDots } from "react-icons/bs";
+import {
+  BsFillArrowUpLeftSquareFill,
+  BsSuitHeart,
+  BsThreeDots,
+} from "react-icons/bs";
 import StickyBox from "react-sticky-box";
 import {
   client1,
@@ -83,9 +87,9 @@ const ProductDetails = () => {
     },
   ];
 
-  const changeNFTImage = (e: any) => {
-    // const file = e.target.src;
-    // setNFTImage(file);
+  const changeNFTImage = (index: number) => {
+    const currentImage = products[0].images[index];
+    setNFTImage(currentImage);
   };
 
   return (
@@ -107,36 +111,25 @@ const ProductDetails = () => {
             >
               <div className="flex md:flex-row flex-col gap-3">
                 <div className="flex md:flex-col flex-row gap-3">
-                  <div className="card border-2 border-light/10 md:p-2 p-1 flex cursor-pointer">
-                    <Image
-                      src={product.images[0]}
-                      alt="nft-1"
-                      className="rounded-md"
-                      width={180}
-                      height={180}
-                      onClick={changeNFTImage}
-                    />
-                  </div>
-                  <div className="card border-0 md:p-2 p-1 flex cursor-pointer">
-                    <Image
-                      src={product.images[1]}
-                      alt="nft-2"
-                      className="rounded-md"
-                      width={180}
-                      height={180}
-                      onClick={changeNFTImage}
-                    />
-                  </div>
-                  <div className="card border-0 md:p-2 p-1 flex cursor-pointer">
-                    <Image
-                      src={product.images[2]}
-                      alt="nft-3"
-                      className="rounded-md"
-                      width={180}
-                      height={180}
-                      onClick={changeNFTImage}
-                    />
-                  </div>
+                  {product.images.map((img, i) => (
+                    <div
+                      key={i}
+                      className={`card md:p-2 p-1 flex cursor-pointer ${
+                        img === NFTImage
+                          ? "border-2 border-light/10"
+                          : "border-0"
+                      }`}
+                    >
+                      <Image
+                        src={img}
+                        alt="nft-3"
+                        className="rounded-md"
+                        width={180}
+                        height={180}
+                        onClick={() => changeNFTImage(i)}
+                      />
+                    </div>
+                  ))}
                 </div>
 
                 <div className="card border-0 md:p-4 p-2 flex w-full">
