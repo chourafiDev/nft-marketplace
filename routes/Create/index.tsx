@@ -66,12 +66,12 @@ const Index = () => {
           </div>
         </Breadcrumb>
 
-        <div className="py-20 px-48 w-full flex justify-between gap-16">
-          <div className="w-1/3">
+        <div className="py-20 lg:px-48 px-5 w-full flex md:flex-row flex-col justify-between lg:gap-16 gap-6">
+          <div className="md:w-1/3 w-full">
             <h2 className="text-white text-lg mb-2">Upload file</h2>
             <p className="text-light">Drag or choose your file to upload</p>
             <div
-              className="mt-6 group relative flex cursor-pointer border-2 border-dashed rounded-lg border-white/20"
+              className="mt-6 group relative flex justify-center items-center cursor-pointer border-2 border-dashed rounded-lg border-white/20"
               onClick={handleClickBoxFile}
             >
               <input
@@ -84,9 +84,9 @@ const Index = () => {
               <Image
                 src={NFTImage ? NFTImage : portfolio05}
                 alt="bg-image"
-                className="rounded-lg"
-                width={300}
-                height={330}
+                className="rounded-lg w-80"
+                width={380}
+                height={400}
               />
 
               <div className="absolute group-hover:scale-90 duration-200 ease-linear w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-light">
@@ -108,7 +108,7 @@ const Index = () => {
               </p>
             </div>
           </div>
-          <div className="card-transparent flex flex-col gap-6 p-8 w-2/3">
+          <div className="card-transparent flex flex-col gap-6 md:p-8 md:w-2/3 w-full">
             <div>
               <p className="text-light mb-2">Product Name</p>
               <Input
@@ -125,7 +125,7 @@ const Index = () => {
               />
             </div>
 
-            <div className="flex gap-3">
+            <div className="flex md:flex-row flex-col gap-3">
               <div>
                 <p className="text-light mb-2">Item Price in $</p>
                 <Input type="text" placeholder="e.g. `20$`" name="price" />
@@ -149,7 +149,7 @@ const Index = () => {
               <Input type="text" placeholder="e.g. `20%`" name="royality" />
             </div>
 
-            <div className="flex gap-3">
+            <div className="flex md:flex-row flex-col gap-3">
               <Checkbox
                 type="checkbox"
                 name="put_on_sale"
@@ -173,9 +173,11 @@ const Index = () => {
               />
             </div>
 
-            <div className="flex gap-4 w-full">
-              <button className="btn btn-dark w-2/5">Preview</button>
-              <button className="btn btn-primary w-3/5">Submit Item</button>
+            <div className="flex md:flex-row flex-col gap-4 w-full">
+              <button className="btn btn-dark md:w-2/5 w-full">Preview</button>
+              <button className="btn btn-primary md:w-3/5 w-full">
+                Submit Item
+              </button>
             </div>
           </div>
         </div>
